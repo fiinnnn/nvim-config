@@ -6,6 +6,8 @@ using [Tangerine](https://github.com/udayvir-singh/tangerine.nvim) and
 
 Based on [Nyoom.nvim](https://github.com/shaunsingh/nyoom.nvim).
 
+BLazINg FAsT (~40ms startup time)
+
 ## Why
 My primary goal with this is to confuse people when they see my config and
 these names are perfect for that.
