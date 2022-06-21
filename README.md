@@ -6,7 +6,7 @@ using [Tangerine](https://github.com/udayvir-singh/tangerine.nvim) and
 
 Based on [Nyoom.nvim](https://github.com/shaunsingh/nyoom.nvim).
 
-### Why
+## Why
 My primary goal with this is to confuse people when they see my config and
 these names are perfect for that.
 
@@ -16,7 +16,7 @@ nice side effect I guess...
 Also I've never used a lisp before so I wanted to see why people like them so
 much and honestly I have to say, I'm not disappointed.
 
-### How
+## How
 I don't know ask someone who actually knows Fennel.
 
 Now here's my rough idea of how this works:
@@ -42,7 +42,7 @@ The file structure is roughly like this:
     - `init.fnl` packer setup, list of packages to install
     - `<plugin_name>.fnl` individual plugin config
 
-### Install
+## Install
 
 1. Don't
 2. Put the contents of this repo in `~/.config/nvim`
@@ -54,7 +54,7 @@ The file structure is roughly like this:
 If this doesn't work I most likely won't know how to help you but feel free
 to try and we might learn something while trying to fix it.
 
-### Editing
+## Editing
 Hah... good luck
 
 If you want to see if things work you can use `:FnlPeak` to see a preview of
