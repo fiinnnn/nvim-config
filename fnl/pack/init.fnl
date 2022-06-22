@@ -3,7 +3,6 @@
 (packer-setup {:autoremove true
                :git {:clone_timeout 300}
                :profile {:enable true}
-               :compile_path (.. (vim.fn.stdpath :config) "/lua/packer_compiled.lua")
                :display {:header_lines 2
                          :title " packer.nvim"}})
 
