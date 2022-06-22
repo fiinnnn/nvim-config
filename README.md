@@ -9,8 +9,8 @@ Based on [Nyoom.nvim](https://github.com/shaunsingh/nyoom.nvim).
 BLazINg FAsT (~40ms startup time)
 
 ## Why
-My primary goal with this is to confuse people when they see my config and
-these names are perfect for that.
+I wanted to be able to say I configured my editor with Fennel, Tangerine and
+Hibiscus just to confuse people.
 
 That's seriously the main reason I chose Fennel, getting a working editor is a
 nice side effect I guess...
