@@ -35,6 +35,9 @@
 
 ;;; ui options
 
+;; ui font
+(set! guifont "Hasklug Nerd Font:h11")
+
 ;; line numbers
 (set! number)
 
