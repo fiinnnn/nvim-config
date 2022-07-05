@@ -53,13 +53,17 @@
   (use! :nvim-telescope/telescope-fzf-native.nvim
         :module :telescope._extensions.fzf
         :run :make)
-
+ 
   ;; utilities
   (use! :ggandor/lightspeed.nvim
         :event [:BufRead])
 
   (use! :numToStr/Comment.nvim
         :config #(require :pack.comment))
+
+  (use! :lewis6991/gitsigns.nvim
+        :config #(let [g (require :gitsigns)]
+                   (g.setup {})))
 
   ;; treesitter
   (use! :nvim-treesitter/nvim-treesitter
