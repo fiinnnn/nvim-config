@@ -6,7 +6,7 @@
       {: sign_define} vim.fn]
   (config {:underline {:severity {:min severity.INFO}}
            :signs {:severity {:min severity.INFO}}
-           :virtual_text false
+           :virtual_text true
            :update_in_insert true
            :severity_sort true
            :float {:show_header false :border :rounded}})
