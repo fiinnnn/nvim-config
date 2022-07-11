@@ -22,6 +22,9 @@
   (set vim.lsp.handlers.textDocument/hover
        (with handlers.hover {:border :solid})))
 
+(let [navic (require :nvim-navic)]
+  (navic.setup))
+
 (fn on-attach [client bufnr]
   ;; set keymaps
   (set-lsp-keys! bufnr)
@@ -35,7 +38,11 @@
                           :hint_enable false
                           :hint_prefix "● "
                           :hint_scheme :DiagnosticSignInfo}
-                        bufnr)))
+                        bufnr))
+
+  ;; nvim-navic setup
+  (let [navic (require :nvim-navic)]
+    (navic.attach client bufnr)))
 
 ;; lsp capabilities
 (local capabilities (vim.lsp.protocol.make_client_capabilities))

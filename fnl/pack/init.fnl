@@ -93,6 +93,9 @@
 
   (use! :stevearc/dressing.nvim)
 
+  (use! :SmiteshP/nvim-navic
+        :requires [:neovim/nvim-lspconfig])
+
   ;; completion
   (use! :hrsh7th/nvim-cmp
         :config (fn []
