@@ -64,7 +64,7 @@
                : capabilities
                :flags {:debounce_text_changes 150}})
 
-(let [servers [:rust_analyzer]]
+(let [servers []]
 (each [_ server (ipairs servers)]
   ((. (. lsp server) :setup) defaults)))
 
@@ -75,3 +75,10 @@
                                                                (vim.fn.expand :$VIMRUNTIME/lua/vim/lsp) true}
                                                      :maxPreload 100000
                                                      :preloadFileSize 10000}}}})
+
+(local rust-tools (require :rust-tools))
+(local (_ requested-server)
+       ((. (require :nvim-lsp-installer.servers) :get_server) :rust_analyzer))
+
+(rust-tools.setup {:server {:cmd_env requested-server._default_options.cmd_env
+                            :on_attach on-attach}})

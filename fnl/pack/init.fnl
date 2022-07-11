@@ -117,4 +117,6 @@
   (use! :Saecki/crates.nvim
         :requires [:nvim-lua/plenary.nvim]
         :config #(let [c (require :crates)]
-                   (c.setup {}))))
+                   (c.setup {})))
+
+  (use! :simrat39/rust-tools.nvim))
