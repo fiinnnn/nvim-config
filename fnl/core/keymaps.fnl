@@ -16,6 +16,11 @@
 
 (which-key.register {:<leader>o ["<cmd>SymbolsOutline<CR>" "Symbols outline"]})
 
+;; trouble
+(which-key.register {:<leader>t {:name "Trouble"
+                                 :w ["<cmd>TroubleToggle workspace_diagnostics<CR>" "Workspace diagnostics"]
+                                 :t ["<cmd>TodoTrouble<CR>" "TODOs"]}})
+
 ;; navigation
 (which-key.register {:<C-h> [:<C-w>h "Switch window left"]})
 (which-key.register {:<C-j> [:<C-w>j "Switch window down"]})

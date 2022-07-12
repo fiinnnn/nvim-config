@@ -65,6 +65,14 @@
         :config #(let [g (require :gitsigns)]
                    (g.setup {})))
 
+  (use! :folke/Trouble.nvim
+        :config #(let [t (require :trouble)]
+                   (t.setup {})))
+
+  (use! :folke/todo-comments.nvim
+        :config #(let [t (require :todo-comments)]
+                   (t.setup {})))
+
   ;; treesitter
   (use! :nvim-treesitter/nvim-treesitter
         :run ":TSUpdate"
