@@ -70,8 +70,7 @@
         :run ":TSUpdate"
         :event [:BufRead :BufNewFile]
         :config #(require :pack.treesitter)
-        :requires [:nvim-treesitter/playground
-                   :JoosepAlviste/nvim-ts-context-commentstring])
+        :requires [:nvim-treesitter/playground])
 
   ;; lsp
   (use! :neovim/nvim-lspconfig
