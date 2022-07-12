@@ -95,6 +95,9 @@
   (use! :SmiteshP/nvim-navic
         :requires [:neovim/nvim-lspconfig])
 
+  (use! :marcomayer/calltree.nvim
+        :config #(require :pack.calltree))
+
   ;; completion
   (use! :hrsh7th/nvim-cmp
         :config (fn []

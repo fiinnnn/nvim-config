@@ -45,6 +45,8 @@
                                      "s" (key vim.lsp.buf :signature_help)
                                      "h" (key vim.lsp.buf :hover)
                                      "r" (key vim.lsp.buf :references)
+                                     "ci" (key vim.lsp.buf :incoming_calls)
+                                     "co" (key vim.lsp.buf :outgoing_calls)
                                      ; diagnostics
                                      "k" (key vim.diagnostic :goto_prev)
                                      "l" (key vim.diagnostic :goto_next)
