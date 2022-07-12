@@ -81,4 +81,5 @@
        ((. (require :nvim-lsp-installer.servers) :get_server) :rust_analyzer))
 
 (rust-tools.setup {:server {:cmd_env requested-server._default_options.cmd_env
-                            :on_attach on-attach}})
+                            :on_attach on-attach
+                            :settings {:rust-analyzer {:checkOnSave {:command :clippy}}}}})
