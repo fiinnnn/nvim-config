@@ -72,6 +72,10 @@
         :config #(require :pack.treesitter)
         :requires [:nvim-treesitter/playground])
 
+  (use! :nvim-treesitter/nvim-treesitter-context
+        :config #(let [c (require :treesitter-context)]
+                   (c.setup {})))
+
   ;; lsp
   (use! :neovim/nvim-lspconfig
         :module :lspconfig
