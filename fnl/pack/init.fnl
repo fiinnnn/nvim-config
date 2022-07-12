@@ -65,6 +65,9 @@
         :config #(let [g (require :gitsigns)]
                    (g.setup {})))
 
+  (use! :akinsho/toggleterm.nvim
+        :config #(require :pack.toggleterm))
+
   (use! :folke/Trouble.nvim
         :config #(let [t (require :trouble)]
                    (t.setup {})))
