@@ -42,6 +42,16 @@
                                  :t ["<cmd>Telescope live_grep<CR>" "Text"]
                                  :k ["<cmd>Telescope keymaps<CR>" "Keymaps"]}})
 
+;; git
+(which-key.register {:<leader>g {:name "Git"
+                                 :j ["<cmd>Gitsigns next_hunk<CR>" "Next hunk"]
+                                 :k ["<cmd>Gitsigns prev_hunk<CR>" "Previous hunk"]
+                                 :d ["<cmd>Gitsigns diffthis HEAD<CR>" "Diff"]
+                                 :l ["<cmd>Gitsigns blame_line<CR>" "Blame"]
+                                 :s ["<cmd>Telescope git_status<CR>" "Status"]
+                                 :c ["<cmd>Telescope git_commits<CR>" "Commits"]
+                                 :C ["<cmd>Telescope git_bcommits<CR>" "Commits (buffer)"]}})
+
 ;; lsp
 (λ set-lsp-keys! [bufnr]
    (which-key.register {:<leader>l {:name "LSP"
