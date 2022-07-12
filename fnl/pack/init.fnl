@@ -102,6 +102,8 @@
   (use! :marcomayer/calltree.nvim
         :config #(require :pack.calltree))
 
+  (use! :simrat39/symbols-outline.nvim)
+
   ;; completion
   (use! :hrsh7th/nvim-cmp
         :config (fn []

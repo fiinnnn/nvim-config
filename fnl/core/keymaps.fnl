@@ -14,6 +14,8 @@
 (which-key.register {:<leader>/ ["<cmd>lua require('Comment.api').toggle_current_linewise()<CR>" "Comment"]} {:mode :n})
 (which-key.register {:<leader>/ ["<ESC><cmd>lua require('Comment.api').toggle_linewise_op(vim.fn.visualmode())<CR>" "Comment"]} {:mode :v})
 
+(which-key.register {:<leader>o ["<cmd>SymbolsOutline<CR>" "Symbols outline"]})
+
 ;; navigation
 (which-key.register {:<C-h> [:<C-w>h "Switch window left"]})
 (which-key.register {:<C-j> [:<C-w>j "Switch window down"]})
