@@ -9,6 +9,7 @@
 (which-key.register {:<leader>w [:<cmd>w<CR> "Save"]})
 (which-key.register {:<leader>q [:<cmd>q<CR> "Quit"]})
 
+(which-key.register {:<leader>h [:<cmd>nohlsearch<CR> "No highlight"]})
 
 (which-key.register {:<leader>/ ["<cmd>lua require('Comment.api').toggle_current_linewise()<CR>" "Comment"]} {:mode :n})
 (which-key.register {:<leader>/ ["<ESC><cmd>lua require('Comment.api').toggle_linewise_op(vim.fn.visualmode())<CR>" "Comment"]} {:mode :v})
