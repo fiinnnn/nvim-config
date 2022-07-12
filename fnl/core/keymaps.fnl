@@ -19,6 +19,7 @@
 ;; trouble
 (which-key.register {:<leader>t {:name "Trouble"
                                  :w ["<cmd>TroubleToggle workspace_diagnostics<CR>" "Workspace diagnostics"]
+                                 :d ["<cmd>TroubleToggle document_diagnostics<CR>" "Document diagnostics"]
                                  :t ["<cmd>TodoTrouble<CR>" "TODOs"]}})
 
 ;; navigation
