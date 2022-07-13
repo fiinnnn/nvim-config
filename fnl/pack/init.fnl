@@ -63,8 +63,6 @@
 
   (use! :AndrewRadev/splitjoin.vim)
 
-  (use! :cohama/lexima.vim)
-
   (use! :tpope/vim-surround)
 
   ;; git
