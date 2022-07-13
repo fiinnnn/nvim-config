@@ -63,6 +63,8 @@
 
   (use! :AndrewRadev/splitjoin.vim)
 
+  (use! :cohama/lexima.vim)
+
   ;; git
   (use! :lewis6991/gitsigns.nvim
         :config #(let [g (require :gitsigns)]
