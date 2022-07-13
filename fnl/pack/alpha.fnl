@@ -23,7 +23,9 @@
 (set dashboard.section.buttons.val
      {1 (dashboard.button :e "  New file" "<cmd>ene <CR>")
       2 (dashboard.button :p "  Projects" "<cmd>Telescope projects<CR>")
-      3 (dashboard.button :f "  Find file" "<cmd>Telescope find_files<CR>")})
+      3 (dashboard.button :f "  Find file" "<cmd>Telescope find_files<CR>")
+      4 (dashboard.button :t "  Find text" "<cmd>Telescope live_grep<CR>")
+      5 (dashboard.button :u "  Update plugins" "<cmd>PackerSync<CR>")})
 
 (set dashboard.section.footer.val
      (string.format " %d plugins loaded"
