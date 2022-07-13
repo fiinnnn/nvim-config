@@ -15,3 +15,4 @@
                    :dynamic_preview_title true}})
 
 (load_extension :fzf)
+(load_extension :projects)

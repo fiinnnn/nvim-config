@@ -23,6 +23,10 @@
   (use! :udayvir-singh/hibiscus.nvim
 	:requires ["udayvir-singh/tangerine.nvim"])
 
+  ;; fancy dashboard
+  (use! :goolord/alpha-nvim
+        :config #(require :pack.alpha))
+
   ;; statusline
   (use! :nvim-lualine/lualine.nvim
         :requires ["kyazdani42/nvim-web-devicons"]
@@ -53,6 +57,9 @@
   (use! :nvim-telescope/telescope-fzf-native.nvim
         :module :telescope._extensions.fzf
         :run :make)
+  (use! :ahmedkhalf/project.nvim
+        :config #(let [p (require :project_nvim)]
+                   (p.setup {})))
  
   ;; editing
   (use! :ggandor/lightspeed.nvim
