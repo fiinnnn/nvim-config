@@ -6,7 +6,7 @@ using [Tangerine](https://github.com/udayvir-singh/tangerine.nvim) and
 
 Based on [Nyoom.nvim](https://github.com/shaunsingh/nyoom.nvim).
 
-BLazINg FAsT (~40ms startup time)
+BLazINg FAsT (~40ms startup time) (it's actually 60ms now, this is unacceptable)
 
 ## Why
 I wanted to be able to say I configured my editor with Fennel, Tangerine and
