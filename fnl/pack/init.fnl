@@ -65,6 +65,8 @@
 
   (use! :cohama/lexima.vim)
 
+  (use! :tpope/vim-surround)
+
   ;; git
   (use! :lewis6991/gitsigns.nvim
         :config #(let [g (require :gitsigns)]
