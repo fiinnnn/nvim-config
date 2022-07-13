@@ -54,20 +54,25 @@
         :module :telescope._extensions.fzf
         :run :make)
  
-  ;; utilities
+  ;; editing
   (use! :ggandor/lightspeed.nvim
         :event [:BufRead])
 
   (use! :numToStr/Comment.nvim
         :config #(require :pack.comment))
 
+  (use! :AndrewRadev/splitjoin.vim)
+
+  ;; git
   (use! :lewis6991/gitsigns.nvim
         :config #(let [g (require :gitsigns)]
                    (g.setup {})))
 
+  ;; terminal
   (use! :akinsho/toggleterm.nvim
         :config #(require :pack.toggleterm))
 
+  ;; trouble
   (use! :folke/Trouble.nvim
         :config #(let [t (require :trouble)]
                    (t.setup {})))
