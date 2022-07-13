@@ -72,6 +72,13 @@
         :config #(let [g (require :gitsigns)]
                    (g.setup {})))
 
+  (use! :pwntester/octo.nvim
+        :requires [:nvim-lua/plenary.nvim
+                   :nvim-telescope/telescope.nvim
+                   :kyazdani42/nvim-web-devicons]
+        :config #(let [o (require :octo)]
+                   (o.setup {})))
+
   ;; terminal
   (use! :akinsho/toggleterm.nvim
         :config #(require :pack.toggleterm))
