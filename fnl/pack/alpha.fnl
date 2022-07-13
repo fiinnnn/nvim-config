@@ -20,11 +20,19 @@
 
 (set dashboard.section.header.opts.hl :Conceal)
 
-(set dashboard.section.buttons.val {1 (dashboard.button :e "  New file" "<cmd>ene <CR>")
-                                    2 (dashboard.button :p "  Projects" "<cmd>Telescope projects<CR>")
-                                    3 (dashboard.button :f "  Find file" "<cmd>Telescope find_files<CR>")})
+(set dashboard.section.buttons.val
+     {1 (dashboard.button :e "  New file" "<cmd>ene <CR>")
+      2 (dashboard.button :p "  Projects" "<cmd>Telescope projects<CR>")
+      3 (dashboard.button :f "  Find file" "<cmd>Telescope find_files<CR>")})
 
-(set dashboard.section.footer.val (string.format " %d plugins loaded" (length (vim.tbl_keys _G.packer_plugins))))
+(set dashboard.section.footer.val
+     (string.format " %d plugins loaded"
+                    (length (vim.tbl_keys _G.packer_plugins))))
 (set dashboard.section.footer.opts.hl :Conceal)
 
-(alpha.setup dashboard.opts)
+(alpha.setup {:layout {1 {:type :padding :val 4}
+                       2 dashboard.section.header
+                       3 {:type :padding :val 2}
+                       4 dashboard.section.buttons
+                       5 dashboard.section.footer}
+              :opts {:margin 5}})
