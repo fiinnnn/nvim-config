@@ -40,7 +40,8 @@
 (which-key.register {:<leader>s {:name "Search"
                                  :f ["<cmd>Telescope find_files<CR>" "File"]
                                  :t ["<cmd>Telescope live_grep<CR>" "Text"]
-                                 :k ["<cmd>Telescope keymaps<CR>" "Keymaps"]}})
+                                 :k ["<cmd>Telescope keymaps<CR>" "Keymaps"]
+                                 :p ["<cmd>Telescope projects<CR>" "Projects"]}})
 
 ;; git
 (which-key.register {:<leader>g {:name "Git"
