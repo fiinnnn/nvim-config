@@ -72,6 +72,9 @@
 
   (use! :tpope/vim-surround)
 
+  (use! :Raimondi/delimitMate
+        :config #(require :pack.delimitmate))
+
   ;; git
   (use! :lewis6991/gitsigns.nvim
         :config #(let [g (require :gitsigns)]
