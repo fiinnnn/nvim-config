@@ -2,7 +2,7 @@
 (local navic (require :nvim-navic))
 
 (setup {:options {:icons_enabled true
-                  :theme :gruvbox-material
+                  :theme :ayu
                   :disabled_filetypes [:NvimTree]
                   :component_separators "|"
                   :section_separators ""}

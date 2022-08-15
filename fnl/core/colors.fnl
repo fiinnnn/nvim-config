@@ -1,4 +1,7 @@
 (require-macros :hibiscus.vim)
 
-(color! gruvbox-flat)
-(g! gruvbox_flat_style :dark)
+(set! termguicolors)
+
+(g! ayu_italic_comment 1)
+(g! ayu_extended_palette 1)
+(color! ayu)
