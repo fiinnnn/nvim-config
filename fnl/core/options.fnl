@@ -35,6 +35,9 @@
 
 ;;; ui options
 
+;; statusline
+(set! laststatus 3) ;; global statusline
+
 ;; ui font
 (set! guifont "FiraCode Nerd Font:h11")
 

@@ -1,8 +1,11 @@
 (local {: setup} (require :lualine))
 (local navic (require :nvim-navic))
 
+(local custom-ayu (require :lualine.themes.ayu))
+(set custom-ayu.normal.c.bg "#0d1016")
+
 (setup {:options {:icons_enabled true
-                  :theme :ayu
+                  :theme :custom-ayu
                   :disabled_filetypes [:NvimTree]
                   :component_separators "|"
                   :section_separators ""}
