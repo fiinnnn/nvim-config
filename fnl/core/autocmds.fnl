@@ -15,6 +15,6 @@
 
           [[BufUnload] "<buffer>" (fn [] (set! showtabline 2)
                                          (set! showmode true)
-                                         (set! laststatus 3)
+                                         (set! laststatus 2)
                                          (set! showcmd true)
                                          (set! ruler true))])

@@ -3,6 +3,7 @@
 
 (local custom-ayu (require :lualine.themes.ayu))
 (set custom-ayu.normal.c.bg "#0d1016")
+(set custom-ayu.inactive.c "StatusLineNC")
 
 (setup {:options {:icons_enabled true
                   :theme :custom-ayu
