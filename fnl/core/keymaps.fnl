@@ -11,7 +11,7 @@
 
 (which-key.register {:<leader>h [:<cmd>nohlsearch<CR> "No highlight"]})
 
-(which-key.register {:<leader>/ ["<cmd>lua require('Comment.api').toggle_current_linewise()<CR>" "Comment"]} {:mode :n})
+(which-key.register {:<leader>/ ["<cmd>lua require('Comment.api').toggle.linewise.current()<CR>" "Comment"]} {:mode :n})
 (which-key.register {:<leader>/ ["<ESC><cmd>lua require('Comment.api').toggle_linewise_op(vim.fn.visualmode())<CR>" "Comment"]} {:mode :v})
 
 (which-key.register {:<leader>o ["<cmd>SymbolsOutline<CR>" "Symbols outline"]})
@@ -48,7 +48,7 @@
                                  :j ["<cmd>Gitsigns next_hunk<CR>" "Next hunk"]
                                  :k ["<cmd>Gitsigns prev_hunk<CR>" "Previous hunk"]
                                  :d ["<cmd>Gitsigns diffthis HEAD<CR>" "Diff"]
-                                 :l ["<cmd>Gitsigns blame_line<CR>" "Blame"]
+                                 :l ["<cmd>Gitsigns toggle_current_line_blame<CR>" "Toggle current line blame"]
                                  :s ["<cmd>Telescope git_status<CR>" "Status"]
                                  :c ["<cmd>Telescope git_commits<CR>" "Commits"]
                                  :C ["<cmd>Telescope git_bcommits<CR>" "Commits (buffer)"]}})
