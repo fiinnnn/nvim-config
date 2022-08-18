@@ -12,7 +12,7 @@
 (which-key.register {:<leader>h [:<cmd>nohlsearch<CR> "No highlight"]})
 
 (which-key.register {:<leader>/ ["<cmd>lua require('Comment.api').toggle.linewise.current()<CR>" "Comment"]} {:mode :n})
-(which-key.register {:<leader>/ ["<ESC><cmd>lua require('Comment.api').toggle_linewise_op(vim.fn.visualmode())<CR>" "Comment"]} {:mode :v})
+(which-key.register {:<leader>/ ["<ESC><cmd>lua require('Comment.api').toggle.linewise(vim.fn.visualmode())<CR>" "Comment"]} {:mode :v})
 
 (which-key.register {:<leader>o ["<cmd>SymbolsOutline<CR>" "Symbols outline"]})
 
