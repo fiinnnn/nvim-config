@@ -33,7 +33,7 @@
         :config #(require :pack.lualine))
 
   ;; colorscheme
-  (use! :Luxed/ayu-vim)
+  (use! :eddyekofo94/gruvbox-flat.nvim)
 
   ;; file navigation
   (use! :kyazdani42/nvim-tree.lua

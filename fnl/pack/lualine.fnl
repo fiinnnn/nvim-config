@@ -1,12 +1,8 @@
 (local {: setup} (require :lualine))
 (local navic (require :nvim-navic))
 
-(local custom-ayu (require :lualine.themes.ayu))
-(set custom-ayu.normal.c.bg "#0d1016")
-(set custom-ayu.inactive.c "StatusLineNC")
-
 (setup {:options {:icons_enabled true
-                  :theme :custom-ayu
+                  :theme :gruvbox-flat
                   :disabled_filetypes [:NvimTree]
                   :component_separators "|"
                   :section_separators ""}
