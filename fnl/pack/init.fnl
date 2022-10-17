@@ -35,6 +35,9 @@
   ;; colorscheme
   (use! :eddyekofo94/gruvbox-flat.nvim)
 
+  ;; notifications
+  (use! :rcarriga/nvim-notify)
+
   ;; file navigation
   (use! :kyazdani42/nvim-tree.lua
         :cmd :NvimTreeToggle
