@@ -8,3 +8,5 @@
 (g! gruvbox_colors {:bg_statusline "#1d2021"})
 
 (color! gruvbox-flat)
+
+(g! neovide_transparency 0.7)
