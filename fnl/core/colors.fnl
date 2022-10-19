@@ -7,6 +7,9 @@
 (g! gruvbox_dark_float false)
 (g! gruvbox_colors {:bg_statusline "#1d2021"})
 
+(when (not vim.g.neovide)
+  (g! gruvbox_transparent true))
+
 (color! gruvbox-flat)
 
-(g! neovide_transparency 0.7)
+(g! neovide_transparency 0.8)
