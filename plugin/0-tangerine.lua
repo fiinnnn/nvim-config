@@ -23,7 +23,7 @@ bootstrap("wbthomason/packer.nvim")
 bootstrap("lewis6991/impatient.nvim")
 bootstrap("udayvir-singh/tangerine.nvim")
 bootstrap("udayvir-singh/hibiscus.nvim")
-bootstrap("eddyekofo94/gruvbox-flat.nvim")
+bootstrap("rebelot/kanagawa.nvim")
 
 _G.__luacache_config = {
     chunks = {

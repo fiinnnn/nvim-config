@@ -33,7 +33,7 @@
         :config #(require :pack.lualine))
 
   ;; colorscheme
-  (use! :eddyekofo94/gruvbox-flat.nvim)
+  (use! :rebelot/kanagawa.nvim)
 
   ;; notifications
   (use! :rcarriga/nvim-notify)

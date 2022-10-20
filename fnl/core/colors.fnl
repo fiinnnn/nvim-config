@@ -2,14 +2,9 @@
 
 (set! termguicolors)
 
-(g! gruvbox_flat_style "hard")
-(g! gruvbox_dark_sidebar false)
-(g! gruvbox_dark_float false)
-(g! gruvbox_colors {:bg_statusline "#1d2021"})
-
 (when (not vim.g.neovide)
-  (g! gruvbox_transparent true))
+  ((. (require :kanagawa) :setup) {:transparent true}))
 
-(color! gruvbox-flat)
+(color! kanagawa)
 
-(g! neovide_transparency 0.8)
+(g! neovide_transparency 0.4)
