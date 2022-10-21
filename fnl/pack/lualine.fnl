@@ -1,8 +1,12 @@
 (local {: setup} (require :lualine))
 (local navic (require :nvim-navic))
 
+(local kanagawa (require :lualine.themes.kanagawa))
+(set kanagawa.normal.c.bg :NONE)
+(set kanagawa.inactive.c.bg :NONE)
+
 (setup {:options {:icons_enabled true
-                  :theme :kanagawa
+                  :theme kanagawa
                   :disabled_filetypes [:NvimTree]
                   :component_separators "|"
                   :section_separators ""}
