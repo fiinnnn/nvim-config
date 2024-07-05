@@ -2,9 +2,9 @@
 
 (set! termguicolors)
 
-(when (not vim.g.neovide)
-  ((. (require :kanagawa) :setup) {:transparent true}))
+((. (require :kanagawa) :setup) {:transparent (not vim.g.neovide)
+                                 :colors {:theme {:all {:ui {:bg_gutter "none"}}}}})
 
-(color! kanagawa)
+(color! "kanagawa-wave")
 
 (g! neovide_transparency 0.4)

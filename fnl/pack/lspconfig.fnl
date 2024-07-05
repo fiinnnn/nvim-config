@@ -68,7 +68,7 @@
 (each [_ server (ipairs servers)]
   ((. (. lsp server) :setup) defaults)))
 
-(lsp.sumneko_lua.setup {:on-attach on-attach
+(lsp.lua_ls.setup {:on-attach on-attach
                         : capabilities
                         :settings {:lua {:diagnostics {:globals {1 :vim}}
                                          :workspace {:library {(vim.fn.expand :$VIMRUNTIME/lua) true
